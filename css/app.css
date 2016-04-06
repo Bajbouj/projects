@@ -1,0 +1,19 @@
+ /*font-family: Arial, Helvetica, sans-serif; margin:150px 500px;*/
+ #login,#pwd{
+   width:250px;
+ }
+ .form {margin-right:5%;
+ font-family:Arial, Helvetica, sans-serif;
+color:#fff;
+font-weight:bold;
+float:right;
+}
+.form button{ float: right; background-color: black; border:black}
+body{
+  background-image: url("../images/background.jpg");
+
+}
+h2{
+  color:#fff;
+font-style:italic;
+}
