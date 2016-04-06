@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="monApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+  </head>
+  <body ng-controller="logCtrl">
+
+<form class="form">
+<fieldset>
+  <br>
+    <div class="form-group">
+      <label for="login">Login :</label>
+      <input type="text"  id="login" class="form-control"  ng-model="log" />
+    </div>
+    <div class="form-group">
+      <label for="pwd">Passwword :</label>
+      <input type="password" id="pwd" class="form-control" ng-model="pwd"/>
+    </div>
+    <div class="form-group">
+    <div class="checkbox">
+    <input type="checkbox">Remember me </input>
+    </div>
+  </div>
+    <button class="btn btn-danger" type="button" ng-click="connect()" >Connect</button>
+</fieldset>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="../js/app.js"></script>
+  </body>
+</html>
