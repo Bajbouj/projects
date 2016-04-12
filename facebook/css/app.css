@@ -24,7 +24,7 @@ font-family: monospace;
   font-size:24px;
 }
 /*j'ai défint une image comme background de body ainsi sa taille (couvre tout le body)*/
-body #main{
+ #main{
   background:url('../images/fb.jpg') no-repeat;
   background-size: cover;
 }
@@ -59,7 +59,22 @@ margin-right: 180px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  background-color: #777;
   border-radius: 10px;
   background-color:red;
+}
+fieldset {
+    display: block;
+    margin:0 2px;
+    padding: 0.35em 0.75em 0.625em 0.75em;
+    border: 2px groove gray;
+}
+body{background-color: #E6E6E6}
+/*Surcharge de la class container-fluid. j'ai changé le padding left et droite à 0*/
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.home-content{background-color:#fff;
 }

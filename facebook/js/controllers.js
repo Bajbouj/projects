@@ -14,8 +14,10 @@ angular.module("myApp.controllers",[])
 
   }
 })
-.controller("homeCtrl",function(){
-
+.controller("homeCtrl",function($scope){
+$scope.fullName="Mohamed Jridi";
+$scope.favoris=["News","Messages","Events","Groups","Football","Series"];
+$scope.groups=["Craft academy","ESPRIT","Engineer"];
 })
 .controller("profilCtrl",function(){
 

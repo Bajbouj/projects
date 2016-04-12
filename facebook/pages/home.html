@@ -1,14 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-      <div ng-include="'pages/navbar-top.html'"></div>
+<div ng-include="'pages/navbar-top.html'"></div>
+<div class="row">
+<div class="col-md-2 col-md-offset-1">
+  <div>
+    <img src="images/me.png"/>
+    <span>{{fullName}}</span>
+  </div>
+  <br>
+  <div>
+    <img src="images/write.png"/>
+    <a ui-sref="profil"><span>Modify profil</span></a>
+  </div>
+<div >
+<h4>Favourites</h4>
+<ul class="list-unstyled" ng-repeat="fav in favoris" >
+<li>{{fav}}</li>
+</ul>
+</div>
+
+<div >
+<h4>Groups</h4>
+<ul class="list-unstyled" ng-repeat="gr in groups" >
+<li>{{gr}}</li>
+</ul>
+</div>
+
+</div>
 
 
+<div class="col-md-7">
+<div class="home-content">
+<img src="images/me.png">
+  <textarea  rows="2" cols="5" class="form-control" placeholder="Create a new status"/></textarea>
+</div>
+</div>
 
- </body>
-</html>
+<div class="col-md-2">
+<fieldset>
+  <ul>
+    <li>hhhhh</li>
+    <li>hhhhhhhhh</li>
+  </ul>
+</div>
+</fieldset>
+</div>
