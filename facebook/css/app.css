@@ -16,13 +16,15 @@ font-size:14px;
 font-family: monospace;
 }
 /**/
-.col-md-3 span{
+.fb,.me{
   color: #fff;
-  font-size:24px;
   font-weight:bold;
 }
+.fb{
+  font-size:24px;
+}
 /*j'ai défint une image comme background de body ainsi sa taille (couvre tout le body)*/
-body{
+body #main{
   background:url('../images/fb.jpg') no-repeat;
   background-size: cover;
 }
@@ -30,3 +32,34 @@ body{
 .btn-ins{background-color: #69a74e;}
 /*j'ai augumenté le margin dela formulaire située dans la div d'id container afin d'avoir un espace entre le header et la div container*/
 .container form{margin:30px 0;}
+/*surchage de la classe navbar-inverse*/
+.navbar-inverse {
+  background-color:#3a5795;
+    border-color: #3a5795;
+}
+/*j'ai définit le style de la barre de recherche:largeur responsive longueur de 28px les points de la bordure sont ronds...*/
+.search {
+display: block;
+width: 80%;
+height: 28px;
+border-radius: 7px;
+margin-top: 13px;
+margin-right: 180px;
+}
+/*surcharge de la class badge de bootstrap en ajoutant un margin-bottom pour déplacer la badge vers le haut
+ et j'ai ignoré l'alignement de badge et de l'image */
+.badge {
+  margin-bottom:12px;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+  background-color:red;
+}

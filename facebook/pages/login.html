@@ -5,7 +5,7 @@ le span Facebook occupe 3 colonnes et décaler avec une seule colonnes à gauche
 <header>
   <div class="row">
   <div class="col-md-3 col-md-offset-1">
-    <span>Facebook</span>
+    <span class="fb">Facebook</span>
 </div>
 <!-- il reste 8 colonnes libres 6 pour la formulaire et 2 pour avoir un espace entre la formulaire et le span Facebbok
 notre formulaire est aligné tous les elements sont alignés
@@ -32,6 +32,7 @@ ng-click c'est pour soumettre notre formulaire-->
 </header>
 <!-- la classe container crée un éléments de largeur fixe qui répond à la taille actuelle de la fenêtre du navigateur
 Notre formulaire est horizontal cette fois-->
+<div id="main">
   <div class="container">
   <form class="form-horizontal" role="form">
 <div class="form-group">
@@ -45,25 +46,22 @@ Notre formulaire est horizontal cette fois-->
 <div class="col-md-6" >  <input type="date" class="form-control" placeholder="Birthday" /></div>
 </div>
 <div class="form-group">
-<div class="col-md-2" >
-  <div class="radio" >
+<div class="col-md-6" >
+
 <label class="radio-inline">
- <input type="radio" class="form-control" name="gender" />
+ <input type="radio"  name="gender" />
 Man</label>
-</div>
-</div>
-<div class="col-md-2">
-  <div class="radio" >
+
 <label class="radio-inline">
-  <input type="radio" class="form-control" name="gender"  />
+  <input type="radio"  name="gender"  />
 Woman</label>
 </div>
-      </div>
 </div>
 <div class="form-group">
-  <div class="col-md-offset-1">
+  <div class="col-md-6">
   <button type="button" class="btn btn-primary btn-ins">Inscription</button>
 </div>
 </div>
   </form>
+</div>
 </div>

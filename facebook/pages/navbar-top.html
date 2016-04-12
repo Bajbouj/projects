@@ -1,11 +1,20 @@
-
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="#">Facebook</a>
+        <a class="navbar-brand" ui-sref="#"><span class="fb">Facebook</span></a>
     </div>
+
     <ul class="nav navbar-nav">
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="profil">Profile</a></li>
+      <li><input type="search" placeholder="Search persons, places or others things" class="search"/></li>
+        <li><a ui-sref="profil">
+        <img src="images/me.png">&nbsp;&nbsp;<span class="me">Mohamed</span>
+      </a></li>
+      <li><a ui-sref="home">
+        <span class="me">Accueil 20+</span>
+      </a></li>
+      <li><a ui-sref="#"><img src="images/f1.png"  /><span class="badge">5</span></a></li>
+      <li><a ui-sref="#"><img src="images/f2.png"  /><span class="badge">10</span></a></li>
+      <li><a ui-sref="#"><img src="images/f3.png"  /><span class="badge">2</span></a></li>
 
     </ul>
+
 </nav>
