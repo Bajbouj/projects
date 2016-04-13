@@ -20,7 +20,8 @@
 
 <div >
 <h4>Groups</h4>
-<ul class="list-unstyled" ng-repeat="gr in groups" >
+<input type="search" ng-model="lett">
+<ul class="list-unstyled" ng-repeat="gr in groups | filter:lett" >
 <li>{{gr}}</li>
 </ul>
 </div>
@@ -29,12 +30,20 @@
 
 
 <div class="col-md-7">
-<div class="home-content">
+
+<div class="home-content" >
 <img src="images/me.png">
-  <textarea  rows="2" cols="5" class="form-control" placeholder="Create a new status"/></textarea>
-</div>
+  <textarea  rows="2" cols="5" class="form-control" placeholder="Create a new status"ng-model="newStatus" /></textarea>
+  <button type="submit" ng-click="getStatus()" class="btn btn-primary">Publish</button>
 </div>
 
+<div ng-show="stat" ng-repeat="st in status" id="stat-content">
+<img src="images/me.png">
+<label > <span style="color:#000">{{st}}</span>  </label>
+<a><img class="like"src="images/like.png"> Like</a>
+  </div>
+
+</div>
 <div class="col-md-2">
 <fieldset>
   <ul>

@@ -76,5 +76,14 @@ body{background-color: #E6E6E6}
     padding-left: 0;
     padding-right: 0;
 }
-.home-content{background-color:#fff;
+#stat-content{background-color:#fff; margin-top:20px}
+.home-content{background-color:#fff;padding-bottom: 35px;}
+.home-content textarea {
+  margin-bottom: 10px;
+border:#fff}
+.btn-primary {
+  color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+float:right;
 }
