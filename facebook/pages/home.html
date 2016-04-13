@@ -20,8 +20,7 @@
 
 <div >
 <h4>Groups</h4>
-<input type="search" ng-model="lett">
-<ul class="list-unstyled" ng-repeat="gr in groups | filter:lett" >
+<ul class="list-unstyled" ng-repeat="gr in groups " >
 <li>{{gr}}</li>
 </ul>
 </div>
@@ -29,27 +28,45 @@
 </div>
 
 
-<div class="col-md-7">
+<div class="col-md-6">
 
 <div class="home-content" >
-<img src="images/me.png">
+<img src="images/me.png">&nbsp;&nbsp;
+<span class="fwb">Mohamed Jridi</span>
   <textarea  rows="2" cols="5" class="form-control" placeholder="Create a new status"ng-model="newStatus" /></textarea>
   <button type="submit" ng-click="getStatus()" class="btn btn-primary">Publish</button>
 </div>
-
+<!--Cette div sera affiché si la variable stat=true-->
 <div ng-show="stat" ng-repeat="st in status" id="stat-content">
-<img src="images/me.png">
-<label > <span style="color:#000">{{st}}</span>  </label>
+<img src="images/me.png">&nbsp;&nbsp;
+<span class="fwb">Mohamed Jridi</span>
+<textarea disabled="true" class="form-control" rows="2" cols="5">{{st}}</textarea>
 <a><img class="like"src="images/like.png"> Like</a>
   </div>
 
 </div>
-<div class="col-md-2">
-<fieldset>
-  <ul>
-    <li>hhhhh</li>
-    <li>hhhhhhhhh</li>
-  </ul>
+<div class="col-md-3">
+<!-- Afficher les details de chaque user dans le tableau users -->
+  <div class="row">
+
+  <ul class="li">
+  <li ng-repeat="user in users | filter:letters |orderBy:'name'" class="list">
+
+     <a href="{{user.url}}">
+  <div class="col-md-4">     <img ng-src="{{user.image}}"class="i"/> </div>
+  <div class="col-md-6">     <span class="s">{{user.name}}</span></div>
+  <div class="col-md-2">     <img src="images/circle.png"></div>
+     </a>
+</li>
+</ul>
+<!-- Creation debinding entre letters model et le text field -->
+<div>
+<input type="search" ng-model="letters" placeholder="Enter your search terms" class="search-aside"/>
 </div>
-</fieldset>
+
+  </div>
+
+
+</div>
+
 </div>
