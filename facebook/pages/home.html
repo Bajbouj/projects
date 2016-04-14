@@ -45,11 +45,12 @@
   </div>
 
 </div>
-<div class="col-md-3">
+<div class="col-md-3 ">
 <!-- Afficher les details de chaque user dans le tableau users -->
+<div class="myList">
   <div class="row">
 
-  <ul class="li">
+  <ul >
   <li ng-repeat="user in users | filter:letters |orderBy:'name'" class="list">
 
      <a href="{{user.url}}">
@@ -66,7 +67,7 @@
 
   </div>
 
-
+</div>
 </div>
 
 </div>
